@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    transform-style:preserve-3d;
+    min-height: 80vh;
+    width: 35rem;
+    border-radius: 30px;
+    padding: 0rem 5rem;
+    box-shadow: 0 20px 20px rgba(180, 155, 71, 0.897), 0px 0px 50px rgb(180, 151, 54);
+}
+
+.iph {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    width: 15rem;
+    height: 15rem;
+    background: linear-gradient(
+        to right,
+        rgba(241, 186, 67, 0.979),
+        rgba(192, 182, 43, 0.877)
+    );
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.info h1 {
+    font-size: 2rem;
+    transition: all 0.75s ease-out;
+}
+
+.info h3 {
+    font-size: 1.3rem;
+    padding: 2rem 0rem;
+    color: rgb(233, 194, 87);
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+}
+
+.memory {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.75s ease-out;
+}
+
+.memory button {
+    padding: 0.5rem 2rem;
+    background: none;
+    border: none;
+    box-shadow: 0px 5px 10px rgb(206, 175, 73);
+    border-radius: 30px;
+    cursor: pointer;
+    outline: rgb(236, 192, 110);
+    font-weight: bold;
+    color: black;
+}
+
+button.active {
+    background: rgb(219, 188, 51);
+    color: rgb(0, 0, 0);
+    
+}
+
+.purchase {
+    margin-top: 5rem;
+    transition: all 0.75s ease-out;
+}
+
+.purchase button {
+    width: 50%;
+    padding: 1rem 0rem;
+    margin: 1rem 5rem 1rem 1rem;
+    position: relative;
+    left: 20%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    background: #ecc048;
+    border: none;
+    color: rgb(7, 6, 6);
+    cursor: pointer;
+    outline: rgb(236, 192, 110);
+    border-radius: 30px;
+    font-weight: bolder;
+  }
