@@ -56,12 +56,17 @@ body {
     transition: all 0.75s ease-out;
 }
 
-.info h3 {
+.info .haracter {
     font-size: 1.3rem;
     padding: 2rem 0rem;
     color: rgb(233, 194, 87);
     font-weight: lighter;
     transition: all 0.75s ease-out;
+    
+}
+li {
+    list-style: none;
+    color: black;
 }
 
 .memory {
@@ -82,7 +87,7 @@ body {
     color: black;
 }
 
-button.active {
+button:hover{
     background: rgb(219, 188, 51);
     color: rgb(0, 0, 0);
     
